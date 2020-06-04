@@ -1,0 +1,20 @@
+body{
+    background-image: url("../hinhanh/89777417_807597389733362_562980035372253184_n.jpg");
+    background-repeat: no-repeat;/* k lap anh*/
+    background-position: center; /*vi tri*/
+    background-size: cover;  /* full man*/
+
+}
+
+h1{
+    font-size:100px ;
+    font-family: 'Be Vietnam';
+    font-weight: 400;/*100 200 300 400(normal)500 600 700 800 900*/
+    line-height: 200px;
+    text-decoration: underline;
+    text-align: center;
+    color:#ff112290 ;
+    background-color: #F5F5DC;
+    border: 1px solid #ff112290;
+
+}
