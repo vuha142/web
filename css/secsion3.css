@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+
+
+}
+a{
+    text-decoration: none;
+
+}
+img{
+    max-width: 100%;
+}
+.header,.main,.footer{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 60%;
+}
+.content{
+    float: left;
+    width: 66.67%;
+
+}
+.sidebar{
+    float: right;
+    width: 33.33%;
+
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+
+}
+.header{
+    padding: 20px 0;
+    background-color: #ffffff;
+
+}
+.menu li{
+    float: right;
+    margin-left: 35px;
+
+}
+.menu li last-child{
+    list-style: none;
+}
+
+.menu li a{
+    float: left;
+    font-size: 18px;
+    text-transform: none;  /*viet hoa hay thuong */
+    color: #333333;
+    font-weight: 600;
+
+}
+}
+.menu li a:hover{
+    background-color: beige;
+    padding: 10px;
+}
+
+.head {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    width: 95%;
+    /*padding: 20px 0;*/
+    margin: 30px 0;
+    padding: 30px;
+
+}
+
+.tentacgia{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+
+}
+.div1{
+
+    float: left;
+    float: top;
+    background-color: white;
+    color: black;
+    width: 95%;
+    margin: 20px 0;
+    font-size: 40px;
+    padding: 30px;
+
+
+}
+
+.p2{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.noti{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+button{
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    /*padding: 25px,10px,25px,10px;*/
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.head4{
+    width: 75%;
+    background-color: white;
+    margin: 30px 0;
+    height: 500px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.head3{
+    border-color: beige;
+    float: left;
+    float: bottom;
+    background-color: white;
+    color: black;
+    width: 75%;
+    padding: 30px;
+    height: 590px;
+    font-size: 20px;
+
+}
+
+
+

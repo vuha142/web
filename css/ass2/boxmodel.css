@@ -1,0 +1,62 @@
+div{
+    /*width: 200px;*/
+   /* width: 50%;*/
+    width: calc(50% - 20px);
+   height: 500px;
+
+   float: left;
+   border: 1px solid red;
+   padding: 50px 100px 10px 50px;
+   /* padding-toppadding: 50px 100px 10px 50px;
+   padding- right
+   padding-botton
+   padding-letf
+    */
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;   /* cat duong vieen*/
+    position: relative;
+}
+span{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    float: left;border-radius: 100%;  /*cat hinh tron*/
+
+}
+.traffic-linght{
+    width:50;
+    height: 50px;
+    background-color: red;
+    float: left;
+    border-radius: 100%;
+    margin: 10px;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.popup{
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: yellow;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    margin: -200px 0 0 -150px;
+    z-index: 10;
+
+}
+.bg-fade{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    margin: 0;
+    z-index: 9;
+}
