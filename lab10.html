@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab9new</title>
+    <link rel="stylesheet" type="text/css" href="css/lab9new.css">
+</head>
+<body>
+<ul class="tab">
+    <li><a href="javascript:void(0);" onclick="navTab(0)">Home</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(1)">Profile</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(2)">Messages</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(3)">Settings</a></li>
+</ul>
+<div class="content">
+    <div class="content_all" id="content_all">
+        <div id="home" class="tab_content">Home content</div>
+        <div id="profile" class="tab_content">Profile content</div>
+        <div id="messages" class="tab_content">Messages content</div>
+        <div id="settings" class="tab_content">Settings content</div>
+    </div>
+</div>
+    <p><span id="min">10</span>:<span id="sec">00</span></p>
+    <button onclick="startClock();">start</button>
+<script type="text/javascript">
+    function navTab(e) {
+        // let tabs = document.getElementsByClassName("tab_content");
+        // for (let i=0;i<tabs.length;i++){
+        //     tabs[i].style.display = "none";
+        // }
+        // let id = e.getAttribute("href");
+        // id = id.replace("#","");
+        // document.getElementById(id).style.display = "block";
+        // // document.getElementById(e).style.display = "block";
+        document.getElementById("content_all").style.transform = "translateX(-"+(e*400)+"px)";
+    }
+    setTimeout(function () {
+        // alert("co nguoi dot nhap");
+    },3000);
+
+    let f = 0;
+    var stv = setInterval(function () {
+        //alert("1 nguoi vua vao web");
+        f++;
+        if (f>4){
+            clearInterval(stv);
+        }
+    },3000);
+   function startClock() {
+       let min=9;
+       let sec =59;
+       let clock = setInterval(function () {
+           document.getElementById("min").innerText = (min>=10?min:"0"+min)
+           document.getElementById("sec").innerText = (sec>=10?sec: "0"+sec)
+           sec--;
+           if (sec<0){
+               min--;
+               sec = 59;
+
+           }
+           if (min<0) clearInterval(clock);
+
+       },100);
+
+   }
+</script>
+</body>
+</html>

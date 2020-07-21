@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <h1 id="heading">ten lop</h1>
+    <h2 id="sub_heading1">giáo viên</h2>
+    <h3 id="sub_heading2">danh sách sv</h3>
+    <ul id="students"></ul>
+
+    <script type="text/javascript">
+        let objclass = {
+            name: "T2004E",
+            classroom: "A8",
+            teacher:{
+                name: "Trinh Quang Hoa",
+                age: 30
+            },
+            dssv: [{
+                    name: "Nguyen Xuan Thang",
+                    age: 24
+                },
+                {
+                    name:"Quan thanh Tu",
+                    age: 22
+                },
+                {
+                    name: "Quan anh Tuan",
+                    age: 21
+                },
+            ]
+
+        }
+        // console.log(objclass.name);
+        // console.log(objclass.teacher.name)
+        // console.log(objclass.DSSV.HS1.name)
+
+        let h1 = document.getElementById("heading");
+        h1.innerText = h1.innerText+ objclass.name;
+        let h2_s1 = document.getElementById("sub_heading1");
+        h2_s1.innerText = h2_s1.innerText+objclass.teacher.name;
+        let h2_s2 = document.getElementById("sub_heading2");
+        h2_s2.innerText = h2_s2.innerText+objclass.classroom;
+        let ul = document.getElementById("students");
+        objclass.DSSV.map(function (e) {
+            let li ="<li>"+e.name+"</li>";
+            ul.innerHTML = ul.innerHTML+li;
+        });
+
+
+
+    </script>
+
+</body>
+</html>

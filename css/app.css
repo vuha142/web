@@ -12,7 +12,7 @@ h1{
     font-weight: 400;/*100 200 300 400(normal)500 600 700 800 900*/
     line-height: 200px;
     text-decoration: underline;
-    text-align: center;
+    text-align: left;
     color:#ff112290 ;
     background-color: #F5F5DC;
     border: 1px solid #ff112290;

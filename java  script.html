@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js 2</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        let obj = {
+            name: "Vũ văn hà",
+            age : 18,
+            address: "so 8 ton that thuyet",
+
+            run: function () {
+                console.log(this.name+ " is running");
+            },
+            girlFriends:[
+                "Ngoc trinh, Phuong trinh"
+            ],
+            // gotoHotel: function() {
+            //     // for (let i=0;i<this.girlFriends.length;i++){
+            // //     //     console.log("DI hotel voi "+this.girlFriends[i]);
+            // // this.girlFriends.map(function(e) {
+            // //     console.log("Di hotel voi "+e);
+            // })
+            // }
+            // }
+            children: {
+                name: "Quan thanh Tu",
+                birthday: "22-3-1997",
+                children: {
+                    name: "Quan van a",
+                    eat: function () {
+                        console.log("uong sua");
+                        return this;
+                    },
+                    sleep: function () {
+                        console.log("di ngu");
+                        return this;
+                    }
+                }
+            }
+        };
+
+        console.log(obj.name);
+        console.log(obj.address);
+        obj.run();
+
+        console.log("ten cua con la:"+obj.children.name);
+        console.log("ten cua chau"+obj.children.children.name);
+        // obj.children.children.eat();
+        obj.children.children.eat().sleep();
+        obj.name = "nguyen van anh"
+        console.log(obj.name)
+
+    </script>
+
+
+<!--    <script type="text/javascript" src="js/demo_js.js"></script>-->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO JS 3</title>
+</head>
+<body>
+    <h1 id="heading">Tieu de trang</h1>
+    <h2 id="Sub_heading">Tieu de phu</h2>
+<script type="text/javascript">
+    let h1 = document.getElementById("heading")
+    console.log(h1.innerText);
+    h1.innerText = "xin chào các bạn";
+    h1.style.color = "red";
+    h1.style.backgroundColor = "yellow";
+    h1.style.borderBottom = "1px solid green";
+    h1.innerHTML = "<i>"+h1.innerText+"</i>";
+
+</script>
+</body>
+</html>

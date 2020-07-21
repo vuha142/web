@@ -3,14 +3,16 @@ body{
 
 }
 p1{
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Be Vietnam';
     font-weight: 600;
 
 
 }
 p2{
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'be vietnam';
+    font-weight: 400;
+
 
 }

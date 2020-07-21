@@ -1,0 +1,30 @@
+body{
+    background-image: url("../hinhanh/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    padding-top: 40px;
+    text-align: center;
+    line-height: normal;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.noidung{
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+}
+.button{
+   background-color: rgb(192,148,87);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 20px;
+}
